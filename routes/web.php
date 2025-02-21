@@ -13,22 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-// Route::get('/cth', function () {
-//     return view('contoh');
-// });
+Route::get('/cth', function () {
+    return view('contoh');
+});
 
-// Route::fallback(function () {
-//     return view('notfound');
-// });
+Route::fallback(function () {
+    return view('notfound');
+});
 
-// Route::get('mahasiswa/{nama}', function ($nama) {
-//     echo "Ini Halaman Mahasiswa dengan Nama $nama";
-// });
+Route::get('mahasiswa/{nama}', function ($nama) {
+    echo "Ini Halaman Mahasiswa dengan Nama $nama";
+});
 
-// Route::get('/hello/hello2/hellolagi', function () {
-//     echo "Hello World";
-// });
+Route::get('/hello/hello2/hellolagi', function () {
+    echo "Hello World";
+});
+
+Route::get('/mahasiswa', function () {
+    $kelas = "IS62";
+    $data = ["Khalifah","Herdio","Badri","Raihan","Putri","Hanif"];
+
+    // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
+    return view('mahasiswa.index',compact('kelas','data'));
+});
+
