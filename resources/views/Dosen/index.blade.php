@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h3 class="fw-bold">{{ __('Data Dosen') }}</h3>
-                    <a href="form.blade.php" class="btn btn-primary">Tambah Data</a>
+                    <a href="dosen/tambah" class="btn btn-primary">Tambah Data</a>
                 </div>
 
                 <div class="card-body">
