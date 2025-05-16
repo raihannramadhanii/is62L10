@@ -18,6 +18,7 @@
                                 <th scope="col">NIDN</th>
                                 <th scope="col">Nama</th>
                                 <th scope="col">Email</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -26,24 +27,23 @@
                                 <td>67348634</td>
                                 <td>Maulian Saputra</td>
                                 <td>mauliansaputra@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>8676538</td>
-                                <td>Luthfi</td>
-                                <td>luthfi@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>5655767</td>
-                                <td>Hadi Syafputra</td>
-                                <td>hadisyaf@gmail.com</td>
+                                <td>
+                                    <a href="" class="btn btn-warning btn-sm">lihat</a>
+                                    <a href="" class="btn btn-info btn-sm">edit</a>
+                                    <a href="" class="btn btn-danger btn-sm">hapus</a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td>78967867</td>
                                 <td>Susi Yahya</td>
                                 <td>susiyahya@gmail.com</td>
+                                <td>
+                                    <a href="" class="btn btn-warning btn-sm">lihat</a>
+                                    <a href="" class="btn btn-info btn-sm">edit</a>
+                                    <a href="" class="btn btn-danger btn-sm">hapus</a>
+                                </td>
+
                             </tr>
                         </tbody>
                     </table>

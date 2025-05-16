@@ -74,4 +74,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 //Data Dosen
 Route::get('/dosen', [dosenController::class, 'index']);
 Route::get('/dosen/tambah', [dosenController::class, 'create']);
+Route::post('/dosen', [dosenController::class, 'store']);
 
