@@ -29,9 +29,9 @@
                                     <td>{{$data->nama}}</td>
                                     <td>{{$data->email}}</td>
                                     <td>
-                                        <a href="" class="btn btn-warning btn-sm">detail</a>
-                                        <a href="" class="btn btn-info btn-sm">edit</a>
-                                        <a href="" class="btn btn-danger btn-sm">hapus</a>
+                                        <a href="" class="btn btn-warning btn-sm"><i class="fa-solid fa-eye"></i></a>
+                                        <a href="/dosen/edit" class="btn btn-info btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @empty
