@@ -22,29 +22,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>67348634</td>
-                                <td>Maulian Saputra</td>
-                                <td>mauliansaputra@gmail.com</td>
-                                <td>
-                                    <a href="" class="btn btn-warning btn-sm">lihat</a>
-                                    <a href="" class="btn btn-info btn-sm">edit</a>
-                                    <a href="" class="btn btn-danger btn-sm">hapus</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>78967867</td>
-                                <td>Susi Yahya</td>
-                                <td>susiyahya@gmail.com</td>
-                                <td>
-                                    <a href="" class="btn btn-warning btn-sm">lihat</a>
-                                    <a href="" class="btn btn-info btn-sm">edit</a>
-                                    <a href="" class="btn btn-danger btn-sm">hapus</a>
-                                </td>
+                              @forelse ( $dosen as $data)
+                                <tr>
+                                    <th scope="row">{{$nomor++}}</th>
+                                    <td>{{$data->nidn}}</td>
+                                    <td>{{$data->nama}}</td>
+                                    <td>{{$data->email}}</td>
+                                    <td>
+                                        <a href="" class="btn btn-warning btn-sm">detail</a>
+                                        <a href="" class="btn btn-info btn-sm">edit</a>
+                                        <a href="" class="btn btn-danger btn-sm">hapus</a>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <th colspan="5" scope="row">Data Tidak Ada</th>
+                                </tr>
+                            @endforelse
 
-                            </tr>
                         </tbody>
                     </table>
                 </div>
