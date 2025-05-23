@@ -8,8 +8,9 @@
                 <div class="card-header">Form Edit Data</div>
 
                 <div class="card-body">
-                    <form method="post" action="/dosen" enctype="multipart/form-data">
+                    <form method="post" action="/dosen/{{$dosen->id}}" enctype="multipart/form-data">
                         @csrf
+                        @method('PUT')
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">NIDN</label>
                             <input type="text" value={{$dosen->nidn}} name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -40,7 +41,7 @@
                             <input type="nohp" name="nohp" value={{$dosen->nohp}} class="form-control" id="exampleInputPassword1">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Tambah</button>
+                        <button type="submit" class="btn btn-primary">Edit</button>
                     </form>
                 </div>
             </div>
